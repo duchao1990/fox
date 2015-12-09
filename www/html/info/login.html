@@ -1,0 +1,29 @@
+<ion-view view-title="登陆">
+    <ion-content class="has-header padding">
+        <form name="SignIn" ng-controller="userCtrl" ng-submit="loginForm()">
+            <div class="list content">
+
+                <label class="item item-input">
+                    <span class="labelspan"><i class="icon ion-email assertive"></i><b>账号</b></span>
+                    <input type="text" placeholder="请输入手机号"  class="text-center" required ng-model='SignIn.mobile'>
+                </label>
+
+                <label class="item item-input">
+                    <span class="labelspan"><i class="icon ion-locked assertive"></i><b>密码</b></span>
+                    <input type="password" placeholder="请输入密码"  class="text-center" ng-minlength='6' ng-maxlength='12' required ng-model='SignIn.pwd'>
+                </label>
+
+            </div>
+            <div class="padding">
+                <button class="button button-block button-assertive" type="submit" ng-disabled="SignIn.$invalid">
+                    登陆
+                </button>
+
+                <p class="text-center">
+                    <a href="#/vMobile" class="button button-primary button-clear">忘记密码?</a>
+                    <a href="#/reg" class="button button-primary button-clear">去注册</a>
+                </p>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,108 @@
+/* Empty. Add your own CSS if you like */
+#search-input .input{width:100%;}
+.bold{font-weight: bold;}
+.font32{font-size: 32px;}
+.font16{font-size: 16px;}
+.font12{font-size: 12px;}
+.font10{font-size: 10px;}
+.font8{font-size: 8px;}
+.gray{color:#c0c0c0;}
+.mleft5{margin-left: 5px;}
+.mleft10{margin-left: 10px;}
+.mleft15{margin-left: 15px;}
+.mright5{margin-right: 5px;}
+.mright10{margin-right: 10px;}
+.mright15{margin-right: 15px;}
+.border1{border:1px solid red;}
+.row a{display: block;}
+.mallist{overflow: auto;width: 100%}
+.mallist a{display: block;float: left; width: 33%;  border-bottom: 1px solid #f1f2f3; border-right:1px solid #f1f2f3;
+    padding: 10px; text-decoration: none;  color: #000;}
+
+.bold{font-weight: bold}
+.more{background-color: #f9f9f9}
+img{width:100%;}
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+.foindex{background-image:url('../image/fo.jpg');background-repeat: no-repeat;background-size: 100%;}
+.fotype{height:60px;padding: 0px; border:none;background:transparent; }
+.bar.bar-header.bar-default.fotype .button-bar{margin:0 10%;}
+.fotype .button.button-clear {min-height: 51px;line-height: 50px; width: 10%;}
+.fotype img{max-height: 50px;max-width: 50px;}
+.qiutype{height:50px;padding: 0px; border:none;background:transparent; }
+.qiutype .button.button-clear {min-height: 51px;line-height: 50px; width: 10%;}
+.qiutype img{max-height: 50px;max-width: 50px;}
+.positive-bg{background:transparent;}
+#xiang{position: relative;width:100%;height: 45%;min-height:160px;max-height:550px;background-image: url('../image/xiang.gif');background-repeat: no-repeat;background-size: 100%;margin-top:-68%;z-index: 8;}
+#gongzhuo{position: relative;width:100%;height: 45%;min-height:260px;max-height:550px;background-repeat: no-repeat;background-size: 100%;margin-top:-68%;top: -10px;z-index: 8;}
+#gongzhuo .bar{position:absolute;z-index:12; width:72%;border:none;background:transparent;margin:52% 14% 0 14%;}
+#gongzhuo .bar .button-bar{padding-right:0 5%;}
+ @media screen and (min-width: 768px) {
+#gongzhuo{position: relative;width:100%;height: 100%;min-height:260px;max-height:550px;background-repeat: no-repeat;background-size: 100%;margin-top:-68%;top: -10px;z-index: 8;}
+    }
+#gongzhuo .bar .button-bar .button{min-height: 72px;line-height: 72px;} 
+.shao{width:3px; transition: width 0.1s; background: #631c0c; float: left;margin-right: 3px;position: relative;}
+.hui{position:absolute;width: 100%;height: 5px;background-color:#CCCCCC;  }
+/* 折叠菜单 */
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+.carda{color:#009966;text-decoration: none;}
+.nickname{color:#999999;margin-right: 20px;}
+.timespan{color:#CCCCCC;}
+.scroll{
+  height:100% !important
+}
+
+.wrapper {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+.item .title{font-size: 0.8em;font-weight: 600;}
+.fcard{width: 100%; overflow: auto; padding: 5%}
+
+.fcard .item-image{float: left;width:40%;margin:5%;border:0;background-color: #ffc900;  }
+.item-complex .item-content{padding:0px;}
+.item-thumbnail-left .item-content {padding-top: 8px;padding-left: 106px;}
+.card{margin: 0px;}
+.card .desc{font-size: 0.8em;}
+.card .title{font-size: 0.9em;}
+.item{padding: 8px;}
+.item .titile{font-size: 0.9em;}
+.item .utime{font-size: 0.8em;float: left;}
+.item .source{font-size: 0.8em; float: right;}
+
+
+
+
+
+
+

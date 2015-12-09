@@ -1,0 +1,30 @@
+<ion-view view-title="{{title}}">
+    <ion-header-bar class="bar-positive bar-energized bar-subheader">
+       <div class="item item-input-inset" style="padding:0px;">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios-search-strong placeholder-icon"></i>
+            <input id="searchKey" type="search"  ng-change="search()" placeholder="search" ng-model="searchKey" autocorrect="true" >
+            <!--i class="icon ion-close-circled placeholder-icon" ng-click="clearSearch()"></i-->
+        </label>
+      </div>
+    </ion-header-bar>
+  <ion-content delegate-handle="job-handle" class="has-header has-subheader" on-scroll="scroll(scrollTop, scrollLeft)" ng-switch="ShowMode">
+        <ion-refresher pulling-text="刷新页面..." on-refresh="doRefresh()" ></ion-refresher>
+     	<ion-list ng-switch-when="list">
+          <ion-item class="item-accordion item-icon-right"
+                    ng-repeat="item in booklist | filter:searchKey"
+                    ng-href="#/bookinfo/{{item.id}}"
+                    >
+                    <i class="icon ion-chevron-right icon-accessory"></i>
+            {{item.title}}
+          </ion-item>
+ 		</ion-list>
+  <ion-infinite-scroll
+      ng-if="moreDataCanBeLoaded()"
+      on-infinite="loadMore()" distance="1%">
+    </ion-infinite-scroll>
+    <div ng-switch-when="none">
+    <center class='bgnone'><img src="img/none.png"></center>
+    </div>
+  </ion-content>
+</ion-view>

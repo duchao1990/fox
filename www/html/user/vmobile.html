@@ -1,0 +1,28 @@
+<ion-view title="验证手机">
+  <ion-content class="has-header padding">
+   <form name="goVerify" ng-controller="userCtrl">
+    <div class="list content">
+   
+    <h5><i class="icon ion-asterisk assertive"></i>请输入绑定的手机号</h5>
+      <label class="item item-input">
+          <span class="labelspan"><b>手机号</b></span>
+          <input type="text" placeholder="请输入手机号" class="text-center" required ng-model='goVerify.mobile'  ng-pattern='/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/'>
+      </label>
+
+    </div>
+        <div class="item item-input-inset">
+          <label class="item-input-wrapper">
+            <input type="text" placeholder="验证码" required ng-minlength='6' ng-maxlength='6' ng-model='goVerify.vcode'>
+          </label>
+          <button class="button button-small button-assertive icon ion-arrow-right-c" ng-click="sendSms({{goVerify.mobile}})">
+            获取验证码
+          </button>
+        </div>
+
+    <div class="padding">
+    <button type="button" class="button button-block button-assertive" ng-disabled="goVerify.$invalid" ng-click="ToVcode({{ForgotPwd.vcode}})"> 下一步</button>
+    </div>
+     <a href="#/setpwd" class="button button-primary button-clear">设置密码?</a>
+    </form>
+  </ion-content>
+  </ion-view>

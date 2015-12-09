@@ -1,0 +1,20 @@
+<ion-modal-view ng-controller="JqModalCtrl">
+        <ion-header-bar>
+          <h1 class="title">解析灵签</h1>
+          <button class="button button-positive" ng-click="hideModal()">关闭</button>
+        </ion-header-bar>
+        <ion-content>
+          <div class="padding">
+            <div class="list card">
+              <div class="item item-thumbnail-left item-complex">
+                <div class="item-content item-text-wrap">
+                  <img src="image/shakeView/q.png" style="width: 100%;">
+                  <h2>{{modalInfo.description}}</h2>
+                    <div ng-bind-html="modalInfo.content">
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-content>
+</ion-modal-view>
